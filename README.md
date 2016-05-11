@@ -1,16 +1,16 @@
 simplenovnc
 ============
 
-This is a minimal image which will help you run X server with openbox on the docker container and access it from ANY recent browser without requiring you to do any configuration on the client side.
+This is a minimal image which will help you run X server with openbox on the docker container and access it from any recent browser without requiring you to do any configuration on the client side.
 
 
 ## Use Cases
 
-1. Provide system application accessible over the web easily. Lets say you want to demo a software which runs on your pc over internet without requiring the clients to install any softwares like Teamviwer,etc.
+1. Provide system application accessible over the web easily. .
 
-2. You can use this to create a simple use & throw linux envinronment with GUI over cloud or any VPS /Server or even at your laptop. 
+2. Create a use & throw linux envinronment with GUI over cloud or any VPS /Server or  at your laptop. 
 
-Especially useful if you have to give access to your friends who come over for facebook/twittering at your PC. :)
+3. Multi-user environments that need isolation and privacy.
 
 ## How to use
 ```
