@@ -30,4 +30,3 @@ apt-get is available to install additional software.
 
 * [NoVNC](http://kanaka.github.io/noVNC/)
 * [Original docker-novnc project](https://github.com/paimpozhil/docker-novnc)
-* Based on https://github.com/paimpozhil/docker-novnc
