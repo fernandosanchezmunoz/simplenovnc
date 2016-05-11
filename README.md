@@ -1,4 +1,4 @@
-docker-novnc
+simplevnc
 ============
 
 This is a minimal image which will help you run X server with openbox on the docker container and access it from ANY recent browser without requiring you to do any configuration on the client side.
@@ -14,7 +14,7 @@ Especially useful if you have to give access to your friends who come over for f
 
 ## How to use
 ```
-docker run -td -p 6080:6080 zerodivide1/docker-novnc
+docker run -td -p 6080:6080 fernandosanchez/simplenovnc
 
 #Or if you like to build yourself
 git clone https://github.com/zerodivide1/docker-novnc.git 
@@ -38,10 +38,8 @@ if you are running it in a local docker host or lan ip . click connect. You are 
 
 ## This is a minimal Image
 
-This comes only with Firefox & Geany text editor installed if you'd like to have more softwares you can freely install them using
+This comes only with  & Geany text editor installed if you'd like to have more softwares you can freely install them using
 apt-get commands
-
-ex: apt-get install libreoffice-base libreoffice-gtk libreoffice-calc
 
 ## Support
 
