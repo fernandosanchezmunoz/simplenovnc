@@ -1,21 +1,25 @@
 simplenovnc
 ============
 
-This is a minimal image which will help you run X server with openbox on the docker container and access it from ANY recent browser without requiring you to do any configuration on the client side.
+This is a minimal image which running an X server with openbox on the docker container, and making it available from any recent browser without requiring any configuration on the client side.
+
+It has been modified to look for the $PORT0 variable and start the websocket in that port if defined. This would be useful for deployment with Marathon and DC/OS.
 
 
 ## Use Cases
 
-1. Provide system application accessible over the web easily. Lets say you want to demo a software which runs on your pc over internet without requiring the clients to install any softwares like Teamviwer,etc.
+1. Provide system application accessible over the web easily.
 
-2. You can use this to create a simple use & throw linux envinronment with GUI over cloud or any VPS /Server or even at your laptop. 
+2. Create a use & throw linux envinronment with GUI over cloud or any VPS /Server or  at your laptop. 
 
-Especially useful if you have to give access to your friends who come over for facebook/twittering at your PC. :)
+3. Multi-user environments that need isolation and privacy.
 
 ## How to use
 ```
 docker run -td -p 6080:6080 fernandosanchez/simplenovnc
 ```
+
+If deployed inside Marathon, the VNC servers will be automatically be available in the "Service Port".
 
 For access within lan / localhost : visit http://localhost:6080 or http://privateip:6080
 if you are running it in a local docker host or lan ip . click connect. You are good to go.
@@ -23,7 +27,8 @@ if you are running it in a local docker host or lan ip . click connect. You are 
 
 ## This is a minimal Image
 
-This comes only with Chromium & Geany text editor installed.
+Applications menu is available right-clicking anywhere on the desktop.
+This comes only with Firefox & Geany text editor installed.
 apt-get is available to install additional software.
 
 ## Credits
