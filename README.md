@@ -1,7 +1,7 @@
 simplenovnc
 ============
 
-This is a minimal image which will help you run X server with openbox on the docker container and access it from any recent browser without requiring you to do any configuration on the client side.
+This is a minimal image which running an X server with openbox on the docker container, and making it available from any recent browser without requiring any configuration on the client side.
 
 It has been modified to look for the $PORT0 variable and start the websocket in that port if defined. This is useful for deployment with Marathon and DC/OS.
 
