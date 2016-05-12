@@ -8,7 +8,7 @@ It has been modified to look for the $PORT0 variable and start the websocket in 
 
 ## Use Cases
 
-1. Provide system application accessible over the web easily. .
+1. Provide system application accessible over the web easily.
 
 2. Create a use & throw linux envinronment with GUI over cloud or any VPS /Server or  at your laptop. 
 
@@ -18,6 +18,8 @@ It has been modified to look for the $PORT0 variable and start the websocket in 
 ```
 docker run -td -p 6080:6080 fernandosanchez/simplenovnc
 ```
+
+If deployed inside Marathon, the VNC servers will be automatically be available in the "Service Port".
 
 For access within lan / localhost : visit http://localhost:6080 or http://privateip:6080
 if you are running it in a local docker host or lan ip . click connect. You are good to go.
