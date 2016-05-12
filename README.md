@@ -28,7 +28,7 @@ if you are running it in a local docker host or lan ip . click connect. You are 
 ## This is a minimal Image
 
 Applications menu is available right-clicking anywhere on the desktop.
-This comes only with Chromium & Geany text editor installed.
+This comes only with Firefox & Geany text editor installed.
 apt-get is available to install additional software.
 
 ## Credits
