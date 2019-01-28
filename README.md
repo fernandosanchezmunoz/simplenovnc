@@ -1,7 +1,10 @@
-chromoter
+simplenovnc
 ============
 
-This is a minimal image running an X server with openbox on the docker container, and making it available through Google Chrome Remote Desktop.
+This is a minimal image running an X server with openbox on the docker container, and making it available from any recent browser without requiring any configuration on the client side.
+
+It has been modified to look for the $PORT0 variable and start the websocket in that port if defined. This would be useful for deployment with Marathon and DC/OS.
+
 
 ## Use Cases
 
@@ -13,8 +16,10 @@ This is a minimal image running an X server with openbox on the docker container
 
 ## How to use
 ```
-docker run -td -p 6080:6080 fernandosanchez/chromoter
+docker run -td -p 6080:6080 fernandosanchez/simplenovnc
 ```
+
+If deployed inside Marathon, the VNC servers will be automatically be available in the "Service Port".
 
 For access within lan / localhost : visit http://localhost:6080 or http://privateip:6080
 if you are running it in a local docker host or lan ip . click connect. You are good to go.
@@ -26,3 +31,7 @@ Applications menu is available right-clicking anywhere on the desktop.
 This comes only with Firefox & Geany text editor installed.
 apt-get is available to install additional software.
 
+## Credits
+
+* [NoVNC](http://kanaka.github.io/noVNC/)
+* [Original docker-novnc project](https://github.com/paimpozhil/docker-novnc)
